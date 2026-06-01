@@ -8,11 +8,7 @@ from aiogram.utils.keyboard import InlineKeyboardBuilder
 
 def user_main_menu() -> InlineKeyboardMarkup:
     """منوی اصلی کاربر"""
-    builder = InlineKeyboardBuilder()
-    builder.row(InlineKeyboardButton(
-        text="📥 دریافت فایل",
-        callback_data="user_get_file"
-    ))
+
     builder.row(InlineKeyboardButton(
         text="📞 تماس با پشتیبانی",
         callback_data="user_support"
